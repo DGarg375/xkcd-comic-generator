@@ -1,0 +1,6 @@
+#root folder
+/node_modules
+
+#client folder
+/client/node_modules
+/client/build
