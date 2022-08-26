@@ -1,11 +1,47 @@
-#navEncomp {
-    width: 100%;
-    height: 55px;
-    display: flex;
-    text-align: center;
-    background-color: #2A9D8F;
+a:hover {
+    cursor: pointer;
 }
 
-#titleNav {
-    font-size: 34px;
+main {
+    width: 100vw;
+}
+
+.header-container {
+    background-color: #2A9D8F;
+    height: 55px;
+    width: 100%;
+    display: flex;
+    font-weight: bold;
+    color: white;
+}
+
+.header-title {
+    width: 50%;
+    align-self: center;
+}
+
+.website-title {
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+.navbar-extended {
+    width: 50%;
+}
+
+.navbar-minimized {
+    display: none;
+    width: 50%;
+}
+
+@media (max-width: 500px) {
+    .navbar-extended {
+        display: none;
+    }
+    .navbar-minimized {
+        display: block;
+    }
+    .website-title {
+        font-size: 16px;
+    }
 }

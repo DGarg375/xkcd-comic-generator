@@ -1,14 +1,21 @@
 import './Nav.css';
-import NavButton from './NavButton.js'
+import NavMin from './NavMin/NavMin.js';
 
 function Nav() {
-    return(
-        <div id="navEncomp">
-            <NavButton navName="ABOUT"></NavButton>
-            <NavButton navName="GET COMICS"></NavButton>
-            <NavButton navName="XKCD OFFICIAL WEBSITE"></NavButton>
-            <NavButton navName="AUTHOR"></NavButton>
-        </div>
+    return (
+        <main>
+            <div className="header-container">
+                <div className="header-title">
+                    <div className="website-title">xkcd comics generator</div>
+                </div>
+                <div className="navbar-extended">
+                    Hello
+                </div>
+                <div className="navbar-minimized">
+                    <NavMin />
+                </div>
+            </div>
+        </main>
     );
 }
 
