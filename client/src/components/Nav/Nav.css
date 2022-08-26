@@ -1,7 +1,3 @@
-a:hover {
-    cursor: pointer;
-}
-
 main {
     width: 100vw;
 }
@@ -21,6 +17,10 @@ main {
     align-self: center;
 }
 
+a > div.website-title:hover {
+    color: white;
+}
+
 .website-title {
     margin-left: 40px;
     font-size: 25px;
@@ -35,6 +35,8 @@ main {
     display: none;
     width: 55%;
 }
+
+/* media queries */
 
 @media (max-width: 550px) {
     .navbar-extended {

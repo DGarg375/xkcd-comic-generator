@@ -7,7 +7,11 @@ function Nav() {
         <main>
             <div className="header-container">
                 <div className="header-title">
-                    <div className="website-title">xkcd COMICS GENERATOR</div>
+                    <a href="/">
+                        <div className="website-title">
+                            xkcd COMICS GENERATOR
+                        </div>
+                    </a>
                 </div>
                 <div className="navbar-extended">
                     <NavMax />

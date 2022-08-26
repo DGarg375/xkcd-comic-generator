@@ -1,3 +1,8 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .navbar-minimized-window {
     display: flex;
     justify-content: flex-end;
@@ -13,40 +18,18 @@
     width: 150px;
 }
 
-.dropdown-comic {
-    display: flex;
-    justify-content: center;
-    column-gap: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.hello {
-    height: 100px;
-    color: black;
-    font-size: 11px;
-    flex:1 1 0;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.drop-get-item {
-    flex: 1 1 0;
-}
-
-.dropdown-comic:hover .hello{
-    display: flex;
-}
-
 .dropdown-button {
     margin-top: 5px;
     font-size: 35px;
     width: 50px;
     height: 50px;
     text-align: center;
-    border-radius: 10px;
     color: white;
+    transition-duration: 0.5s;
+}
+
+.dropdown-container {
+    display: none;
 }
 
 .dropdown {
@@ -62,20 +45,49 @@
 
 .drop-text {
     font-size: 15px;
+    height: 35px;
+    transition-duration: 0.5s;
+    border-radius: 15px;
 }
 
-.dropdown-container {
+.dropdown-comic {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.drop-get-comics {
+    height: 100px;
+    font-size: 11px;
+    flex:1 1 0;
     display: none;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-a {
-    text-decoration: none;
-    color: white;
+.drop-get-item {
+    flex: 1 1 0;
+    transition-duration: 0.5s;
+    border-radius: 10px;
+}
+
+.drop-get-item:hover {
+    background-color: #E9C46A;
+}
+
+.dropdown-comic:hover .drop-get-comics {
+    display: flex;
+}
+
+.drop-text:hover {
+    background-color: #E9C46A;
 }
 
 a:hover {
     cursor: pointer;
-    color: #E76F51;
+    color: #2A9D8F;
 }
 
 .hover-container:hover .dropdown-container{
@@ -84,10 +96,10 @@ a:hover {
 
 .dropdown-button:hover {
     cursor: pointer;
-    color: #E76F51;
+    color: #E9C46A;
 }
 
 #drop-get-comics:hover {
     cursor: pointer;
-    color: #E76F51;
+    color: #2A9D8F;
 }
