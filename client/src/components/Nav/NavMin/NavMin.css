@@ -8,8 +8,35 @@
     margin-right: 50px;
     display: flex;
     flex-direction: column;
+    row-gap: 9px;
     align-items: flex-end;
     width: 150px;
+}
+
+.dropdown-comic {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.hello {
+    height: 100px;
+    color: black;
+    font-size: 11px;
+    flex:1 1 0;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.drop-get-item {
+    flex: 1 1 0;
+}
+
+.dropdown-comic:hover .hello{
+    display: flex;
 }
 
 .dropdown-button {
@@ -52,7 +79,7 @@ a:hover {
 }
 
 .hover-container:hover .dropdown-container{
-    display: block;
+    display: inline-block;
 }
 
 .dropdown-button:hover {
