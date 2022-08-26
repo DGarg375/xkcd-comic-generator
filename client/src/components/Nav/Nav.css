@@ -13,6 +13,7 @@ main {
     display: flex;
     font-weight: bold;
     color: white;
+    position: fixed;
 }
 
 .header-title {

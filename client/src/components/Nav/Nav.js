@@ -1,5 +1,6 @@
 import './Nav.css';
 import NavMin from './NavMin/NavMin.js';
+import NavMax from './NavMax/NavMax.js';
 
 function Nav() {
     return (
@@ -9,7 +10,7 @@ function Nav() {
                     <div className="website-title">xkcd comics generator</div>
                 </div>
                 <div className="navbar-extended">
-                    Hello
+                    <NavMax />
                 </div>
                 <div className="navbar-minimized">
                     <NavMin />
