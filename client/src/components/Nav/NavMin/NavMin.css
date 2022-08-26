@@ -1,6 +1,7 @@
 .navbar-minimized-window {
     display: flex;
     justify-content: flex-end;
+    height: 100%;
 }
 
 .hover-container {
@@ -12,10 +13,10 @@
 }
 
 .dropdown-button {
-    font-size: 40px;
-    width: 55px;
-    height: 55px;
-    background-color: #E9C46A;
+    margin-top: 5px;
+    font-size: 35px;
+    width: 50px;
+    height: 50px;
     text-align: center;
     border-radius: 10px;
     color: white;
@@ -24,13 +25,16 @@
 .dropdown {
     width: 150px;
     height: 250px;
-    background-color: #E9C46A;
-    border-radius: 10px;
+    background-color: #2A9D8F;
+    border-radius: 0px 0px 20px 20px;
     text-align: center;
-    font-size: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.drop-text {
+    font-size: 15px;
 }
 
 .dropdown-container {
@@ -39,12 +43,12 @@
 
 a {
     text-decoration: none;
-    color: #2A9D8F;
+    color: white;
 }
 
 a:hover {
     cursor: pointer;
-    color: white;
+    color: #E76F51;
 }
 
 .hover-container:hover .dropdown-container{
@@ -53,5 +57,10 @@ a:hover {
 
 .dropdown-button:hover {
     cursor: pointer;
-    color: #2A9D8F;
+    color: #E76F51;
+}
+
+#drop-get-comics:hover {
+    cursor: pointer;
+    color: #E76F51;
 }

@@ -17,25 +17,26 @@ main {
 }
 
 .header-title {
-    width: 50%;
+    width: 45%;
     align-self: center;
 }
 
 .website-title {
-    margin-left: 50px;
+    margin-left: 40px;
     font-size: 25px;
 }
 
 .navbar-extended {
-    width: 50%;
+    width: 55%;
+    margin-right: 40px;
 }
 
 .navbar-minimized {
     display: none;
-    width: 50%;
+    width: 55%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
     .navbar-extended {
         display: none;
     }

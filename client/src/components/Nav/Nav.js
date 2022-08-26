@@ -7,7 +7,7 @@ function Nav() {
         <main>
             <div className="header-container">
                 <div className="header-title">
-                    <div className="website-title">xkcd comics generator</div>
+                    <div className="website-title">xkcd COMICS GENERATOR</div>
                 </div>
                 <div className="navbar-extended">
                     <NavMax />

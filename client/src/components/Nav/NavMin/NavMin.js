@@ -7,14 +7,14 @@ function NavMin() {
                 <div className="dropdown-button">
                     :::
                 </div>
-                    <div className="dropdown-container">
+                <div className="dropdown-container">
                     <div className="dropdown">
-                        <a href="/"><div>ABOUT</div></a>
-                        <a href="/"><div>GET COMICS</div></a>
-                        <a href="/"><div>XKCD WEBSITE</div></a>
-                        <a href="/"><div>AUTHOR</div></a>
+                        <a href="/"><div className="drop-text">ABOUT</div></a>
+                        <div className="drop-text" id="drop-get-comics">GET COMICS</div>
+                        <a href="https://xkcd.com/"><div className="drop-text">XKCD WEBSITE</div></a>
+                        <a href="/"><div className="drop-text">AUTHOR</div></a>
                     </div>
-                    </div>
+                </div>
             </div>
         </div>
     );
