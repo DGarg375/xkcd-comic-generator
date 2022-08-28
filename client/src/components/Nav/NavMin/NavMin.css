@@ -13,14 +13,12 @@ a {
     margin-right: 50px;
     display: flex;
     flex-direction: column;
-    row-gap: 9px;
     align-items: flex-end;
     width: 150px;
 }
 
 .dropdown-button {
-    margin-top: 0px;
-    font-size: 35px;
+    font-size: 40px;
     width: 50px;
     height: 50px;
     text-align: center;
@@ -101,5 +99,10 @@ a:hover {
 
 #drop-get-comics:hover {
     cursor: pointer;
+    color: #2A9D8F;
+}
+
+.dropdown-comic:hover #drop-get-comics {
+    background-color: #E9C46A;
     color: #2A9D8F;
 }

@@ -7,9 +7,9 @@ main {
     height: 55px;
     width: 100%;
     display: flex;
-    font-weight: bold;
     color: white;
     position: fixed;
+    font-weight: bold;
 }
 
 .header-title {
@@ -24,6 +24,7 @@ a > div.website-title:hover {
 .website-title {
     margin-left: 40px;
     font-size: 25px;
+    font-style: italic;
 }
 
 .navbar-extended {
