@@ -25,7 +25,7 @@ a {
     height: 50px;
     text-align: center;
     color: white;
-    transition-duration: 0.5s;
+    transition-duration: 0s;
 }
 
 .dropdown-container {
@@ -46,7 +46,7 @@ a {
 .drop-text {
     font-size: 15px;
     height: 35px;
-    transition-duration: 0.5s;
+    transition-duration: 0s;
     border-radius: 15px;
 }
 
@@ -69,7 +69,7 @@ a {
 
 .drop-get-item {
     flex: 1 1 0;
-    transition-duration: 0.5s;
+    transition-duration: 0s;
     border-radius: 10px;
 }
 
