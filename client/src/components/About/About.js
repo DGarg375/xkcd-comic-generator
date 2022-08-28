@@ -1,6 +1,8 @@
+import './About.css';
+
 function About() {
     return(
-        <div>HELLOOOOOOOOOO THEREEE</div>
+        <div>this is the about page</div>
     );
 }
 

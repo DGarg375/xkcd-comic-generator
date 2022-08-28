@@ -20,21 +20,21 @@ function NavMin() {
                                 GET COMIC
                             </div>
                             <div className="drop-get-comics">
-                                <a href="/">
+                                <Link to="/comic/random">
                                     <div className="drop-get-item">
                                         RANDOMLY
                                     </div>
-                                </a>
-                                <a href="/">
+                                </Link>
+                                <Link to="/comic/id">
                                     <div className="drop-get-item">
                                         BY COMIC ID
                                     </div>
-                                </a>
-                                <a href="/">
+                                </Link>
+                                <Link to="/comic/latest">
                                     <div className="drop-get-item">
                                         LATEST
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <a href="https://xkcd.com/">

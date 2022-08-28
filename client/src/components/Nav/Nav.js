@@ -1,4 +1,6 @@
 import './Nav.css';
+import { Link } from 'react-router-dom';
+
 import NavMin from './NavMin/NavMin.js';
 import NavMax from './NavMax/NavMax.js';
 
@@ -7,11 +9,11 @@ function Nav() {
         <main>
             <div className="header-container">
                 <div className="header-title">
-                    <a href="/">
+                    <Link to="/">
                         <div className="website-title">
                             xkcd COMICS GENERATOR
                         </div>
-                    </a>
+                    </Link>
                 </div>
                 <div className="navbar-extended">
                     <NavMax />
