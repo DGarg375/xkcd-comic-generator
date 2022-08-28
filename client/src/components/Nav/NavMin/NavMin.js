@@ -1,4 +1,5 @@
 import './NavMin.css'
+import { Link } from 'react-router-dom';
 
 function NavMin() {
     return(
@@ -9,11 +10,11 @@ function NavMin() {
                 </div>
                 <div className="dropdown-container">
                     <div className="dropdown">
-                        <a href="/">
+                        <Link to="/about">
                             <div className="drop-text">
                                 ABOUT
                             </div>
-                        </a>
+                        </Link>
                         <div className="dropdown-comic">
                             <div className="drop-text" id="drop-get-comics">
                                 GET COMIC
@@ -41,11 +42,11 @@ function NavMin() {
                                 XKCD WEBSITE
                             </div>
                         </a>
-                        <a href="/">
+                        <Link to="/author">
                             <div className="drop-text">
                                 AUTHOR
                             </div>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
