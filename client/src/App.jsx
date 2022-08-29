@@ -14,9 +14,9 @@ function App() {
   return (
     <main>
       <Nav />
-      <br></br><br></br><br></br>
       {/* New stuff */}
-      <div>
+      <br></br><br></br><br></br>
+      <div className="main-container">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

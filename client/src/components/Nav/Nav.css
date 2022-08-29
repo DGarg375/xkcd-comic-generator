@@ -29,6 +29,7 @@ a > div.website-title:hover {
 
 .navbar-extended {
     width: 55%;
+    margin-right: 50px;
 }
 
 .navbar-minimized {
@@ -38,7 +39,7 @@ a > div.website-title:hover {
 
 /* media queries */
 
-@media (max-width: 830px) {
+@media (max-width: 800px) {
     .navbar-extended {
         display: none;
     }

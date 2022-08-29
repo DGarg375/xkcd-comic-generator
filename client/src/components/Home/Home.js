@@ -2,7 +2,9 @@ import './Home.css';
 
 function Home() {
     return(
-        <div>this is the home page</div>
+        <div className="home-main-container">
+            this is home page
+        </div>
     );
 }
 
