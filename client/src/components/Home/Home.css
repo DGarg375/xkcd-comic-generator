@@ -1,6 +1,4 @@
 .home-main-container {
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,9 +9,10 @@
     width: 500px;
     height: 350px;
     border-radius: 100px;
-    margin: 90px;
+    margin: 75px;
     margin-top: 100px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -26,12 +25,29 @@
     color: #2A9D8F;
 }
 
+.get-comic-home-button {
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: #2A9D8F;
+    border: 0;
+    font-weight: bold;
+    color: white;
+    transition-duration: 0.3s;
+}
+
+.get-comic-home-button:hover {
+    cursor: pointer;
+    background-color: #E76F51;
+    border-radius: 25px;
+}
+
 @media(max-width: 500px) {
     .welcome-box {
         height: 250px;
         border-radius: 50px;
     }
     .welcome-text {
-        font-size: 25px;
+        font-size: 20px;
     }
 }
