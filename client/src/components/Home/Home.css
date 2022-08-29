@@ -50,4 +50,7 @@
     .welcome-text {
         font-size: 20px;
     }
+    .get-comic-home-button {
+        transition-duration: 0s;
+    }
 }
