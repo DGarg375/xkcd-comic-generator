@@ -14,7 +14,6 @@ function App() {
   return (
     <main>
       <Nav />
-      {/* New stuff */}
       <br></br><br></br><br></br>
       <div className="main-container">
         <Routes>
