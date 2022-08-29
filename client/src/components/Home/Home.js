@@ -3,7 +3,9 @@ import './Home.css';
 function Home() {
     return(
         <div className="home-main-container">
-            this is home page
+            <div className="welcome-box">
+                <div className="welcome-text">WELCOME TO THE xkcd COMIC GENERATOR!</div>
+            </div>
         </div>
     );
 }
