@@ -15,6 +15,7 @@ main {
 .header-title {
     width: 45%;
     align-self: center;
+    text-shadow: black 4px 3px 3px;
 }
 
 a > div.website-title:hover {
