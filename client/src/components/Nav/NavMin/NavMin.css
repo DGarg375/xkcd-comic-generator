@@ -72,7 +72,7 @@ a {
 }
 
 .drop-get-item:hover {
-    background-color: #E9C46A;
+    color: #E9C46A;
 }
 
 .dropdown-comic:hover .drop-get-comics {
@@ -81,11 +81,13 @@ a {
 
 .drop-text:hover {
     background-color: #E9C46A;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 a:hover {
     cursor: pointer;
     color: #2A9D8F;
+    
 }
 
 .hover-container:hover .dropdown-container{
@@ -105,4 +107,5 @@ a:hover {
 .dropdown-comic:hover #drop-get-comics {
     background-color: #E9C46A;
     color: #2A9D8F;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }

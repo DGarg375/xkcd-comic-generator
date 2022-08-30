@@ -10,19 +10,30 @@
     height: 350px;
     border-radius: 100px;
     margin: 75px;
-    margin-top: 100px;
+    margin-top: 115px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    transition-duration: 0.3s;
+    
 }
+.welcome-box:hover {
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
+}
+
+.welcome-box:hover .welcome-text {
+    color: rainbow;
+    text-shadow: black 4px 4px 4px;
+} 
 
 .welcome-text {
     font-size: 40px;
     font-weight: bold;
     margin: 20px;
-    color: #2A9D8F;
+    color: white;
+    transition-duration: 0.3s;
 }
 
 .get-comic-home-button {
@@ -52,5 +63,8 @@
     }
     .get-comic-home-button {
         transition-duration: 0s;
+        width: 105px;
+        height: 35px;
+        font-size: 11px;
     }
 }

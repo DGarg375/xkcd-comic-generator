@@ -8,7 +8,9 @@ import Nav from './components/Nav/Nav.js';
 import About from './components/About/About.js';
 import Author from './components/Author/Author.js';
 import Home from './components/Home/Home.js';
-import Comic from './components/Comic/Comic.js';
+import ComicID from './components/Comic/ComicID.js';
+import ComicRandom from './components/Comic/ComicRandom.js';
+import ComicLatest from './components/Comic/ComicLatest.js';
 
 function App() {
   return (
@@ -20,9 +22,9 @@ function App() {
           <Route path="/" element={<Home />} loading />
           <Route path="/about" element={<About />} loading />
           <Route path="/author" element={<Author />} loading />
-          <Route path="/comic/random" element={<Comic />} loading />
-          <Route path="/comic/id" element={<Comic />} loading />
-          <Route path="/comic/latest" element={<Comic />} loading />
+          <Route path="/comic/random" element={<ComicRandom />} loading />
+          <Route path="/comic/id" element={<ComicID />} loading />
+          <Route path="/comic/latest" element={<ComicLatest />} loading />
         </Routes>
       </div>
     </main>

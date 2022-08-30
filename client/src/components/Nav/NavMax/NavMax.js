@@ -10,7 +10,7 @@ function NavMax() {
                     <div>ABOUT</div>
                 </div>
             </Link>
-            <a className="nav-ext-links" id="nav-ext-get-comics">
+            <div className="nav-ext-links" id="nav-ext-get-comics">
                 <div className="nav-ext-buttons" id="get-comics-title">
                     <div>GET COMIC</div>
                 </div>
@@ -25,7 +25,7 @@ function NavMax() {
                         <div className="comic-drop-item">LATEST</div>
                     </Link>
                 </div>
-            </a>
+            </div>
             <a href="https://xkcd.com" className="nav-ext-links">
                 <div className="nav-ext-buttons">
                     <div>XKCD WEBSITE</div>
