@@ -4,6 +4,11 @@
     align-items: center;
 }
 
+.detail-headers {
+    color: purple;
+    text-decoration: underline;
+}
+
 .main-content {
     width: 800px;
     background-color: #E9C46A;
@@ -16,6 +21,7 @@
     align-items: center;
     padding-top: 50px;
     padding-bottom: 50px;
+    box-shadow: blue 0px 0px 0px 2px inset;
     transition-duration: 0.5s;
 }
 
@@ -60,6 +66,26 @@ img {
     color: white;
 }
 
+.details-container {
+    display: flex;
+}
+
+.details-text {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    max-width: 60%;
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: #E76F51;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border-radius: 15px;
+    transition-duration: 0.5s;
+}
+
 @media (max-width: 800px) {
     img {
         transition-duration: 0s;
@@ -75,5 +101,8 @@ img {
         height: 35px;
         font-size: 10px;
         transition-duration: 0s;
+    }
+    .details-text {
+        font-size: 15px;
     }
 }

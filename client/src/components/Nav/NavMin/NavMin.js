@@ -37,7 +37,7 @@ function NavMin() {
                                 </Link>
                             </div>
                         </div>
-                        <a href="https://xkcd.com/">
+                        <a href="https://xkcd.com/" target="_blank">
                             <div className="drop-text">
                                 XKCD WEBSITE
                             </div>

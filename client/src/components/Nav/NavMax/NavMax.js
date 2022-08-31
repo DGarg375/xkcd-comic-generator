@@ -26,7 +26,7 @@ function NavMax() {
                     </Link>
                 </div>
             </div>
-            <a href="https://xkcd.com" className="nav-ext-links">
+            <a href="https://xkcd.com" target="_blank" className="nav-ext-links">
                 <div className="nav-ext-buttons">
                     <div>XKCD WEBSITE</div>
                 </div>
