@@ -30,7 +30,7 @@ function ComicRandom() {
             setLatestComicNum(response.data.num);
             setTimeout(() => {
                 loadingContext.done();
-            }, 2000);
+            }, 1500);
         }); 
     }, []);
 
@@ -56,7 +56,7 @@ function ComicRandom() {
 
 function ComicImgRender(props) {
     return(
-        <div className="test">
+        <div className="img-component">
             <img src={props.img_url} alt={props.alt}></img>
         </div>
     );
@@ -75,7 +75,7 @@ function ComicDetRender(props) {
                 <div><span className="detail-headers">Comic Title:</span> {title} </div>
                 <div><span className="detail-headers">Issue Date:</span> {issue_date}</div>
                 <div><span className="detail-headers">Issue Number:</span> {comic_num}</div>
-                <a href={img_link} target="_blank">{"{"} LINK TO IMAGE {"}"}</a>
+                <a href={img_link} target="_blank">{"{"} LINK FOR IMAGE {"}"}</a>
             </div>
         );
     }

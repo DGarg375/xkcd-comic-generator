@@ -1,7 +1,7 @@
 import './Comic.css';
-import ComicID from './Sub/ComicID';
-import ComicLatest from './Sub/ComicLatest';
-import ComicRandom from './Sub/ComicRandom';
+import ComicID from './ComicID';
+import ComicLatest from './ComicLatest';
+import ComicRandom from './ComicRandom';
 import { useLoadingContext } from 'react-router-loading';
 
 function Comic() {

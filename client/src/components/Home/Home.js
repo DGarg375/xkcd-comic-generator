@@ -4,7 +4,9 @@ import { useLoadingContext } from 'react-router-loading';
 
 function Home() {
     const loadingContext = useLoadingContext();
-    loadingContext.done();
+    setTimeout(() => {
+        loadingContext.done();   
+    }, 1000);
     return(
         <div className="home-main-container">
             <div className="welcome-box">
