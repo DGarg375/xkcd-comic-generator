@@ -28,7 +28,7 @@ function ComicLatest() {
         <div className="home-main-container">
             <div className="main-content">
                 <div className="img-component">
-                    <img src={LatestComic.img} alt="hello"></img>
+                    <img src={LatestComic.img} alt={LatestComic.alt}></img>
                 </div>
                 <ComicDetRender toggle={detailPopup} comicData={LatestComic} />
                 <button type="button" className="randomButtons" onClick={toggleButton}>Details</button>

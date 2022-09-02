@@ -3,6 +3,8 @@ import { useLoadingContext } from 'react-router-loading';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
+const months = [null, "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
 function ComicRandom() {
     const [latestComicNum, setLatestComicNum] = useState(2000);
     const [randomComicNum, setRandomComicNum] = useState(getRandomNum(latestComicNum));
@@ -19,7 +21,6 @@ function ComicRandom() {
 
     function getNewComic() {
         setRandomComicNum(getRandomNum(latestComicNum));
-        setPopup(false);
     };
 
     const loadingContext = useLoadingContext();
@@ -45,7 +46,7 @@ function ComicRandom() {
         <div className="home-main-container">
             <div className="main-content">
                 <button type="button" className="randomButtons" onClick={getNewComic}>GET MORE COMICS</button>
-                <ComicImgRender img_url={randomComicData.img} alt={randomComicData.alt}/>
+                <ComicImgRender img_url={randomComicData.img} alt={randomComicData.alt} />
                 <ComicDetRender toggle={detailPopup} comicData = {randomComicData} />
                 <button type="button" className="randomButtons" onClick={toggleButton}>Details</button>
             </div>
@@ -61,8 +62,6 @@ function ComicImgRender(props) {
         </div>
     );
 }
-
-const months = [null, "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 function ComicDetRender(props) {
     let title = props.comicData.title;
