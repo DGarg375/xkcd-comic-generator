@@ -65,6 +65,7 @@ img {
 .input-area {
     display: flex;
     align-items: center;
+    padding: 20px;
 }
 
 #comic-id-input {
@@ -120,11 +121,15 @@ img {
         height: 35px;
     }
     #comic-id-input {
-        height: 35px;
-        width: 120px;
-        font-size: 15px;
+        height: 50px;
+        width: 130px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .details-text {
         font-size: 15px;
+    }
+    .input-area {
+        flex-direction: column;
     }
 }
