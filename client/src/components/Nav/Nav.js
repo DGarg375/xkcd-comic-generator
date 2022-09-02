@@ -24,6 +24,6 @@ function Nav() {
             </div>
         </main>
     );
-}
+};
 
 export default Nav;

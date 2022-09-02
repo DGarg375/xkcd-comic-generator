@@ -1,6 +1,6 @@
 import './ComicLatest.css';
-import { useLoadingContext } from 'react-router-loading';
 import axios from 'axios';
+import { useLoadingContext } from 'react-router-loading';
 import { useEffect, useState } from 'react';
 
 const months = [null, "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -9,11 +9,11 @@ function ComicLatest() {
     const [LatestComic, setLatestComic] = useState([]);
     const [detailPopup, setPopup] = useState(false);
 
+    const loadingContext = useLoadingContext();
+
     function toggleButton() {
         setPopup(!detailPopup);
-    }
-
-    const loadingContext = useLoadingContext();
+    };
     
     useEffect(() => {
         axios.get('/getLatest')
@@ -24,6 +24,7 @@ function ComicLatest() {
             }, 1500);
         })
     }, []);
+    
     return(
         <div className="home-main-container">
             <div className="main-content">
@@ -35,7 +36,7 @@ function ComicLatest() {
             </div>
         </div>
     );
-}
+};
 
 function ComicDetRender(props) {
     let title = props.comicData.title;
@@ -52,6 +53,6 @@ function ComicDetRender(props) {
             </div>
         );
     }
-}
+};
 
 export default ComicLatest;

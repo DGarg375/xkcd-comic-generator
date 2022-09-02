@@ -18,8 +18,8 @@
     text-align: center;
     transition-duration: 0.5s;
     box-shadow: blue 0px 0px 0px 2px inset;
-    
 }
+
 .welcome-box:hover {
     border: 0;
     box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
@@ -65,9 +65,11 @@
         height: 200px;
         border-radius: 50px;
     }
+
     .welcome-text {
         font-size: 20px;
     }
+
     .get-comic-home-button {
         width: 105px;
         height: 35px;
@@ -78,9 +80,11 @@
     .welcome-box {
         box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
     }
+
     .welcome-text {
         text-shadow: black 4px -3px 3px;
     }
+    
     .get-comic-home-button {
         transition-duration: 0s;
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;

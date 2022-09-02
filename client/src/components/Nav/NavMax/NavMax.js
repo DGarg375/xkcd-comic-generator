@@ -38,6 +38,6 @@ function NavMax() {
             </Link>
         </div>
     );
-}
+};
 
 export default NavMax;

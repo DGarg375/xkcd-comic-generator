@@ -3,10 +3,12 @@ import { Link } from 'react-router-dom';
 import { useLoadingContext } from 'react-router-loading';
 
 function Home() {
+
     const loadingContext = useLoadingContext();
     setTimeout(() => {
         loadingContext.done();   
     }, 1000);
+
     return(
         <div className="home-main-container">
             <div className="welcome-box">
@@ -17,6 +19,6 @@ function Home() {
             </div>
         </div>
     );
-}
+};
 
 export default Home;

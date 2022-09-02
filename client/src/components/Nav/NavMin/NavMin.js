@@ -52,6 +52,6 @@ function NavMin() {
             </div>
         </div>
     );
-}
+};
 
 export default NavMin;

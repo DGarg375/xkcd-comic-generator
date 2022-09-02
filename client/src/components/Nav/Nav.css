@@ -44,9 +44,11 @@ a > div.website-title:hover {
     .navbar-extended {
         display: none;
     }
+
     .navbar-minimized {
         display: block;
     }
+    
     .website-title {
         font-size: 16px;
     }

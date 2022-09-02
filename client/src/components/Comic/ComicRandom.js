@@ -1,6 +1,6 @@
 import './ComicRandom.css';
-import { useLoadingContext } from 'react-router-loading';
 import axios from 'axios';
+import { useLoadingContext } from 'react-router-loading';
 import { useEffect, useState } from 'react';
 
 const months = [null, "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -11,9 +11,11 @@ function ComicRandom() {
     const [randomComicData, setRandomComicData] = useState([]);
     const [detailPopup, setPopup] = useState(false);
 
+    const loadingContext = useLoadingContext();
+
     function getRandomNum(num) {
         return (Math.floor(Math.random() * num) + 1);
-    }
+    };
 
     function toggleButton() {
         setPopup(!detailPopup);
@@ -22,8 +24,6 @@ function ComicRandom() {
     function getNewComic() {
         setRandomComicNum(getRandomNum(latestComicNum));
     };
-
-    const loadingContext = useLoadingContext();
 
     useEffect(() => {
         axios.get('/getLatest')
@@ -53,7 +53,7 @@ function ComicRandom() {
             
         </div>
     );
-}
+};
 
 function ComicImgRender(props) {
     return(
@@ -61,7 +61,7 @@ function ComicImgRender(props) {
             <img src={props.img_url} alt={props.alt}></img>
         </div>
     );
-}
+};
 
 function ComicDetRender(props) {
     let title = props.comicData.title;
@@ -78,6 +78,6 @@ function ComicDetRender(props) {
             </div>
         );
     }
-}
+};
 
 export default ComicRandom;

@@ -1,7 +1,7 @@
 import './ComicID.css';
+import axios from 'axios';
 import { useLoadingContext } from 'react-router-loading';
 import { useEffect, useState } from 'react';
-import axios from 'axios';
 
 const months = [null, "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
@@ -11,7 +11,22 @@ function ComicID() {
     const [detailPopup, setPopup] = useState(false);
 
     const latestText = `latest #${latestComicNum}`;
+
     const loadingContext = useLoadingContext();
+
+    function getComicById() {
+        const id = document.getElementById("comic-id-input").value;
+        document.getElementById("comic-id-input").value = "";
+        axios.get(`/getById?id=${id}`)
+        .then(response => {
+            setComicData(response.data);
+        });
+    };
+
+    function toggleButton() {
+        setPopup(!detailPopup);
+    };
+
     useEffect(() => {
         axios.get('/getLatest')
         .then(response => {
@@ -21,17 +36,7 @@ function ComicID() {
             }, 1500);
         })
     }, []);
-    function getComicById() {
-        const id = document.getElementById("comic-id-input").value;
-        document.getElementById("comic-id-input").value = "";
-        axios.get(`/getById?id=${id}`)
-        .then(response => {
-            setComicData(response.data);
-        });
-    }
-    function toggleButton(comicIdData) {
-        setPopup(!detailPopup);
-    }
+
     return(
         <div className="home-main-container">
             <div className="main-content">
@@ -45,7 +50,7 @@ function ComicID() {
             </div>
         </div>
     );
-}
+};
 
 function ComicImgRender(props) {
     if(props.img_url != null) {
@@ -55,7 +60,7 @@ function ComicImgRender(props) {
             </div>
         );
     }
-}
+};
 
 function ComicDetRender(props) {
     let title = props.comicData.title;
@@ -72,6 +77,6 @@ function ComicDetRender(props) {
             </div>
         );
     }
-}
+};
 
 export default ComicID;
