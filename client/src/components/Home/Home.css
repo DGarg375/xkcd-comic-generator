@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url('https://imgs.xkcd.com/comics/mark.png');
 }
 
 .welcome-box {
@@ -73,6 +74,9 @@
     .get-comic-home-button {
         width: 105px;
         height: 35px;
+    }
+    .home-main-container {
+        background-image: none;
     }
 }
 
