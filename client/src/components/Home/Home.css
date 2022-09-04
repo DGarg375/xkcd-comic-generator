@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('vaccinated.png');
+    background-image: url('../../assets/vaccinated.png');
 }
 
 .welcome-box {

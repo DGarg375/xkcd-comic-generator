@@ -5,7 +5,7 @@ function Author() {
     const loadingContext = useLoadingContext();
     loadingContext.done();
     return(
-        <div>this is author page</div>
+        <div className="main-container-author">this is author page</div>
     );  
 }
 
